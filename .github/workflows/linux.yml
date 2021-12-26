@@ -36,16 +36,16 @@ jobs:
         # /home/runner/work/_PipelineMapping/90999/xfrpc
         # /home/runner/work/xfrpc
         # /home/runner/work/xfrpc/xfrpc
-        # /home/runner/work/xfrpc/xfrpc/build/xfrpc
-        
+        # /home/runner/work/xfrpc/xfrpc/build/xfrpc        
         cd ../../../
         pwd
         tar -zcvf xfrp.tgz xfrpc
         echo xxm finish
-
-        - name: Upload to release
+        
+      - name: Upload to release
         uses: JasonEtco/upload-to-release@master
         with:
-          args: /home/runner/work/xfrp.tgz application/octet-stream
+          args: home/runner/work/xfrp.tgz
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+          
