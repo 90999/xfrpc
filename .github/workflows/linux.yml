@@ -30,7 +30,8 @@ jobs:
         cmake ..
         make
         #tar -cvf xfrp.tar xfrp
-        pwd
+        pwd 
+        # /home/runner/work/xfrpc/xfrpc/build
         find / -name xfrp*
         
 
