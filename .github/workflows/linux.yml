@@ -30,6 +30,7 @@ jobs:
         cmake ..
         make
         #tar -cvf xfrp.tar xfrp
+        echo  pwd
         ls -lh
         cd xfrp
         ls -lh
