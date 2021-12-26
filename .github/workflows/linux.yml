@@ -29,7 +29,8 @@ jobs:
         cd build
         cmake ..
         make
-        tar -cvf xfrp.tar xfrp
+        #tar -cvf xfrp.tar xfrp
+        ls -lh
         cd xfrp
         ls -lh
         
