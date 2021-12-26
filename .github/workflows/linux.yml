@@ -47,4 +47,4 @@ jobs:
       if: always()
       with:
         name: xfrp_build
-        path: home/runner/work/xfrp.tgz        
+        path: /home/runner/work/xfrp.tgz        
