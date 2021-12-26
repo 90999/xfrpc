@@ -1,10 +1,10 @@
 name: xfrpc 
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
     
   watch:
     types: [started]
@@ -29,3 +29,6 @@ jobs:
         cd build
         cmake ..
         make
+        ls -lh
+        
+        
