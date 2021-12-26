@@ -39,13 +39,12 @@ jobs:
         # /home/runner/work/xfrpc/xfrpc/build/xfrpc        
         cd ../../../
         pwd
-        tar -zcvf xfrp.tgz xfrpc
+        #tar -zcvf xfrp.tgz xfrpc
         echo xxm finish
         
-      - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
-        with:
-          args: home/runner/work/xfrp.tgz
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
-          
+    - name : Upload packages
+      uses: actions/upload-artifact@master
+      if: always()
+      with:
+        name: xfrp_build
+        path: home/runner/work/xfrpc            
