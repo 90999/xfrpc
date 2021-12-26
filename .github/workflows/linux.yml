@@ -40,7 +40,7 @@ jobs:
         
         cd ../../../
         pwd
-        tar -cvf xfrp.tar xfrp
+        tar -cvf xfrp.tar xfrpc
         echo xxm finish
 
        
