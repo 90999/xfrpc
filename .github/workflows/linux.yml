@@ -39,7 +39,7 @@ jobs:
         # /home/runner/work/xfrpc/xfrpc/build/xfrpc        
         cd ../../../
         pwd
-        #tar -zcvf xfrp.tgz xfrpc
+        tar -zcvf xfrp.tgz xfrpc
         echo xxm finish
         
     - name : Upload packages
